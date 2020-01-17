@@ -1,6 +1,6 @@
 {
   "name": "cy-react-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "开发脚手架工具",
   "main": "index.js",
   "bin": {
@@ -17,6 +17,11 @@
   ],
   "engines": {
     "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/jibenziliao/cy-react-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jibenziliao/cy-react-cli"
   },
   "dependencies": {
     "chalk": "^2.4.2",
