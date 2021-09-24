@@ -1,10 +1,10 @@
 {
-  "name": "cy-react-cli",
-  "version": "0.0.3",
+  "name": "create-vite-react-ts",
+  "version": "0.0.4",
   "description": "开发脚手架工具",
   "main": "index.js",
   "bin": {
-    "cy-react": "bin/main.js"
+    "vite-react": "bin/main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,12 +16,12 @@
     "react-cli"
   ],
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
-  "homepage": "https://github.com/jibenziliao/cy-react-cli",
+  "homepage": "https://github.com/jibenziliao/create-vite-react-ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jibenziliao/cy-react-cli"
+    "url": "https://github.com/jibenziliao/create-vite-react-ts"
   },
   "dependencies": {
     "chalk": "^2.4.2",
