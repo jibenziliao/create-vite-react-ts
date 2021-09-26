@@ -12,13 +12,13 @@ yarn create @jibenziliao/create-vite-react-ts project-name
 
 🍎 安装脚手架
 ```bash
-npm i -g @jibenziliao/create-vite-react-ts
+npm i -g @jibenziliao/vite-react-ts
 ```
 
 🍏 使用脚手架创建项目
 
 ```bash
-create-vite-react-ts project-name
+vite-react-ts create project-name
 ```
 
 参照项目： [awesome-test-cli](https://github.com/Walker-Leee/awesome-test-cli)
