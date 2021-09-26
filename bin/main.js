@@ -5,18 +5,18 @@ const chalk = require('chalk')
 const semver = require('semver')
 const requiredVersion = require('../package.json').engines.node
 
-// 检测node版本函数
 /**
- * 
- * @param {*} wanted 
- * @param {*} id 
+ * 检测node版本函数
+ * @param {*} wanted
+ * @param {*} id
  */
-function checkNodeVersion (wanted, id) {
+function checkNodeVersion(wanted, id) {
   if (!semver.satisfies(process.version, wanted)) {
-    console.log(chalk.red(
-      '你是用的Node版本号为： ' + process.version + ', 但 ' + id +
-      ' 需运行在 ' + wanted + '.\n请升级你的Node版本'
-    ))
+    console.log(
+      chalk.red(
+        '你是用的Node版本号为： ' + process.version + ', 但 ' + id + ' 需运行在 ' + wanted + '.\n请升级你的Node版本'
+      )
+    )
     process.exit(1)
   }
 }
@@ -24,19 +24,14 @@ function checkNodeVersion (wanted, id) {
 checkNodeVersion(requiredVersion, 'create-vite-react-ts')
 
 if (semver.satisfies(process.version, '14.x')) {
-  console.log(chalk.red(
-    `你是用的Node版本是 ${process.version}.\n` +
-    `强烈建议你使用最新 LTS 版本`
-  ))
+  console.log(chalk.red(`你是用的Node版本是 ${process.version}.\n` + `强烈建议你使用最新 LTS 版本`))
 }
 
 // 开始处理命令
 const program = require('commander')
 const minimist = require('minimist')
 
-program
-  .version(require('../package').version)
-  .usage('<command> [options]')
+program.version(require('../package').version).usage('<command> [options]')
 
 // 创建命令
 program
@@ -52,15 +47,12 @@ program
     require('../lib/create')(name, options)
   })
 
-program
-  .arguments('<command>')
-  .action((cmd) => {
-    program.outputHelp()
-    console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`))
-    console.log()
-    // suggestCommands(cmd)
-  })
-
+program.arguments('<command>').action(cmd => {
+  program.outputHelp()
+  console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`))
+  console.log()
+  // suggestCommands(cmd)
+})
 
 // 自定义错误提示信息
 const enhanceErrorMessages = require('../lib/utils/enhanceErrorMessages')
@@ -76,12 +68,12 @@ if (!process.argv.slice(2).length) {
   program.outputHelp()
 }
 
-function camelize (str) {
-  return str.replace(/-(\w)/g, (_, c) => c ? c.toUpperCase() : '')
+function camelize(str) {
+  return str.replace(/-(\w)/g, (_, c) => (c ? c.toUpperCase() : ''))
 }
 
 // 获取参数
-function cleanArgs (cmd) {
+function cleanArgs(cmd) {
   const args = {}
   cmd.options.forEach(o => {
     const key = camelize(o.long.replace(/^--/, ''))

@@ -4,7 +4,7 @@
   "description": "开发脚手架工具",
   "main": "index.js",
   "bin": {
-    "vite-react": "bin/main.js"
+    "create-vite-react-ts": "bin/main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

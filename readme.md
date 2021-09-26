@@ -5,16 +5,20 @@
 搭配模板项目 [react-admin-template](https://github.com/jibenziliao/react-admin-template)
 
 命令介绍
+快速初始化
+```bash
+yarn create vite-react-ts project-name
+```
 
 🍎 安装脚手架
 ```bash
-npm i -g cy-react-cli
+npm i -g create-vite-react-ts
 ```
 
 🍏 使用脚手架创建项目
 
 ```bash
-cy-react create project-name
+create-vite-react-ts project-name
 ```
 
 参照项目： [awesome-test-cli](https://github.com/Walker-Leee/awesome-test-cli)
