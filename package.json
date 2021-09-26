@@ -1,6 +1,6 @@
 {
-  "name": "create-vite-react-ts",
-  "version": "0.0.4",
+  "name": "@jibenziliao/create-vite-react-ts",
+  "version": "0.0.5",
   "description": "开发脚手架工具",
   "main": "index.js",
   "bin": {
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/jibenziliao/create-vite-react-ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jibenziliao/create-vite-react-ts"
+    "url": "git+https://github.com/jibenziliao/create-vite-react-ts.git"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -40,5 +40,13 @@
     "string.prototype.padstart": "^3.0.0",
     "valid-filename": "^3.1.0",
     "validate-npm-package-name": "^3.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/jibenziliao/create-vite-react-ts/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "jibenziliao",
+  "license": "MIT"
 }
