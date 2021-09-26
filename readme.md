@@ -7,7 +7,7 @@
 命令介绍
 快速初始化
 ```bash
-yarn create @jibenziliao/vite-react-ts create project-name
+yarn create @jibenziliao/vite-react-ts project-name
 ```
 
 🍎 安装脚手架
@@ -18,7 +18,7 @@ npm i -g @jibenziliao/create-vite-react-ts
 🍏 使用脚手架创建项目
 
 ```bash
-vite-react-ts create project-name
+create-vite-react-ts project-name
 ```
 
 参照项目： [awesome-test-cli](https://github.com/Walker-Leee/awesome-test-cli)
