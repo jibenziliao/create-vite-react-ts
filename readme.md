@@ -7,7 +7,7 @@
 命令介绍
 快速初始化
 ```bash
-yarn create @jibenziliao/create-vite-react-ts create project-name
+yarn create @jibenziliao/vite-react-ts create project-name
 ```
 
 🍎 安装脚手架
