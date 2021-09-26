@@ -1,6 +1,6 @@
 {
   "name": "@jibenziliao/create-vite-react-ts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "开发脚手架工具",
   "main": "index.js",
   "bin": {
