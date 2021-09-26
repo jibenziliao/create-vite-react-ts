@@ -12,7 +12,7 @@ yarn create @jibenziliao/create-vite-react-ts project-name
 
 🍎 安装脚手架
 ```bash
-npm i -g @jibenziliao/vite-react-ts
+npm i -g @jibenziliao/create-vite-react-ts
 ```
 
 🍏 使用脚手架创建项目

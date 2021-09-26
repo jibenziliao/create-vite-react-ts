@@ -21,9 +21,9 @@ function checkNodeVersion(wanted, id) {
   }
 }
 
-checkNodeVersion(requiredVersion, 'create-vite-react-ts')
+checkNodeVersion(requiredVersion, '@jibenziliao/create-vite-react-ts')
 
-if (semver.satisfies(process.version, '14.x')) {
+if (semver.satisfies(process.version, '14.0.X')) {
   console.log(chalk.red(`你是用的Node版本是 ${process.version}.\n` + `强烈建议你使用最新 LTS 版本`))
 }
 
